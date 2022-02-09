@@ -1,0 +1,167 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-icons-: royalblue;
+  --bg-color-: #162b7b;
+  --bg-color-list-: hsl(0deg 0% 100% / 90%);
+  --color-icon-delete-: #de4b09;
+  --box-shadow-icon-: hsl(0deg 95% 44% / 5%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 30px;
+  background: #ccc;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track:hover {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 200, 0.45);
+  border-radius: 30px;
+  width: 10px;
+  height: 20px;
+}
+
+body {
+  background-color: var(--bg-color-);
+}
+
+li {
+  list-style: none;
+}
+
+header section {
+  color: white;
+  padding: 5px;
+}
+
+header figure img,
+h1 {
+  margin: 0 0 0 28%;
+  margin-top: 5px;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+main section {
+  width: 100%;
+}
+
+main section:nth-child(1) {
+  padding: 0 10px;
+  margin-top: 90px;
+}
+
+main section:nth-child(1) input,
+button {
+  width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px rgba(250, 250, 250, 0.45);
+}
+
+main input {
+  border-bottom: solid 4px rgb(168, 226, 245);
+}
+
+main input:focus {
+  outline: none;
+}
+
+main button {
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+main button:hover {
+  background-color: #ccc;
+  outline: none;
+  border: none;
+}
+
+main section:nth-child(2) {
+  background-color: var(--bg-color-list-);
+  padding: 10px;
+  height: 440px;
+  width: 70%;
+  overflow-y: scroll;
+}
+
+main section .contactList li {
+  padding: 10px;
+  border: solid;
+  background-color: rgba(0, 0, 0, 0.45);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+main section .contactList li:hover {
+  border: solid;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main section .contactList {
+  padding: 10px;
+}
+main section .contactList h2,
+p,
+span {
+  font-weight: 600;
+}
+
+#removeContact {
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/trash.svg);
+  background-repeat: no-repeat;
+  border: solid var(--color-icon-delete-);
+  background-position: center;
+  border-radius: 100%;
+  cursor: pointer;
+  float: right;
+}
+#removeContact:hover {
+  transform: translateY(-5px);
+}
+
+.digit_simple {
+  width: 22ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(50) infinite, blink 0.5s step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
